@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15px"
+    android:paddingBottom="15px"
+    >
+    <ImageView
+        android:id="@+id/record_type"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:src="@drawable/mobile"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/record_name"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="35px"
+        android:text="习近平"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/record_type"
+        android:layout_marginLeft="50px"
+        android:gravity="bottom"
+        />
+
+    <TextView
+        android:id="@+id/record_number"
+        android:layout_width="220px"
+        android:layout_height="wrap_content"
+        android:text="13999999999"
+        android:textSize="35px"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/record_name"
+        android:layout_marginLeft="20px"
+        android:layout_alignBottom="@+id/record_name"
+        android:gravity="bottom"
+        />
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:text="16:09"
+        android:textSize="30px"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/record_number"
+        android:layout_marginLeft="30px"
+        android:layout_alignBottom="@+id/record_name"
+        android:gravity="bottom"
+        />
+
+    <CheckBox
+        android:id="@+id/record_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:button="@null"
+        android:background="@drawable/selector_linkman_checkbox"
+        android:layout_marginRight="20px"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/record_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上海"
+        android:textSize="24px"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/record_name"
+        android:layout_alignLeft="@+id/record_name"
+        />
+
+</RelativeLayout>

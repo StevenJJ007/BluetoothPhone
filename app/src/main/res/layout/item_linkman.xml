@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="15px"
+    android:paddingBottom="15px"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/linkman_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="4"
+        android:textColor="#ffffff"
+        android:textSize="44px"
+        android:text="习近平"
+        android:singleLine="true"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mobile"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/linkman_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="13999999999"
+        android:textSize="30px"
+        android:textColor="#ffffff"
+        android:layout_gravity="bottom"
+        android:layout_weight="4"
+        android:singleLine="true"
+        />
+
+    <CheckBox
+        android:id="@+id/linkman_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:button="@null"
+        android:background="@drawable/selector_linkman_checkbox"
+        android:layout_marginRight="20px"
+        android:checked="false" />
+
+</LinearLayout>

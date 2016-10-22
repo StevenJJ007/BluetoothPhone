@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/caller_status_name"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:id="@+id/caller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="李工"
+            android:textColor="#f4f4f4"
+            android:textSize="50px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/caller_status_place"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/caller_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="广西柳州"
+            android:textColor="#f4f4f4"
+            android:textSize="28px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/caller_call"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="75px">
+
+        <TextView
+            android:id="@+id/caller_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="来电"
+            android:textColor="#f4f4f4"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/caller_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00:00"
+            android:textColor="#f4f4f4"
+            android:textSize="38px"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_caller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/caller_acceptCall"
+            android:layout_width="20px"
+            android:layout_height="100px"
+            android:layout_weight=".3"
+            android:background="@drawable/call_out" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            android:background="@null" />
+
+
+        <Button
+            android:id="@+id/caller_discall"
+            android:layout_width="30px"
+            android:layout_height="110px"
+            android:layout_weight=".3"
+            android:background="@drawable/disring" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

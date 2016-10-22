@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_numb"
+            android:layout_width="430px"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="phone"
+            android:paddingLeft="90px"
+            android:textColor="#ffffff"
+            android:textSize="48px" />
+
+        <ImageButton
+            android:id="@+id/ibtn_delete_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:background="@null"
+            android:src="@drawable/delete_numb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ibtns_1to3"
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_numb"
+        android:layout_below="@+id/ll_numb"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dialNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_1"
+            android:tag="1" />
+
+        <ImageButton
+            android:id="@+id/dialNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_2"
+            android:tag="2" />
+
+        <ImageButton
+            android:id="@+id/dialNum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_3"
+            android:tag="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ibtns_4to6"
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_numb"
+        android:layout_below="@+id/ll_ibtns_1to3"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dialNum4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_4"
+            android:tag="4" />
+
+        <ImageButton
+            android:id="@+id/dialNum5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_5"
+            android:tag="5" />
+
+        <ImageButton
+            android:id="@+id/dialNum6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_6"
+            android:tag="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ibtns_7to9"
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_numb"
+        android:layout_below="@+id/ll_ibtns_4to6"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dialNum7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_7"
+            android:tag="7" />
+
+        <ImageButton
+            android:id="@+id/dialNum8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_8"
+            android:tag="8" />
+
+        <ImageButton
+            android:id="@+id/dialNum9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_9"
+            android:tag="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ibtns_xingtojing"
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_numb"
+        android:layout_below="@+id/ll_ibtns_7to9"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dialx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_xing"
+            android:tag="*" />
+
+        <ImageButton
+            android:id="@+id/dialNum0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_0"
+            android:tag="0" />
+
+        <ImageButton
+            android:id="@+id/dialj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/numb_jing"
+            android:tag="#" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="430px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_numb"
+        android:layout_below="@+id/ll_ibtns_xingtojing"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialCall"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/call_out" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

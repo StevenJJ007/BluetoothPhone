@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.anyonavinfo.bluetoothtel.MainActivity">
+
+    <ImageButton
+        android:id="@+id/ibtn_exit"
+        android:layout_width="100px"
+        android:layout_height="90px"
+        android:background="@null"
+        android:src="@drawable/quit" />
+    <!-- 4大按钮及fragment显示区 -->
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/ibtn_exit"
+        android:background="@null">
+        <!-- 右侧4个大按钮-->
+        <RadioGroup
+            android:id="@+id/rg_medu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtn_medu_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="76px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_medu_set" />
+
+            <RadioButton
+                android:id="@+id/rbtn_medu_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="76px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_medu_dial" />
+
+            <RadioButton
+                android:id="@+id/rbtn_medu_linkman"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="76px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_medu_linkman" />
+
+            <RadioButton
+                android:id="@+id/rbtn_medu_record"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="76px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_medu_record" />
+        </RadioGroup>
+
+        <!-- 右侧3个大按钮-->
+        <LinearLayout
+            android:id="@+id/ll_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/rbtn_call_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_call_dial"
+                android:paddingTop="80px" />
+
+            <CheckBox
+                android:id="@+id/rbtn_call_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_call_mute"
+                android:paddingTop="80px" />
+
+            <CheckBox
+                android:id="@+id/rbtn_call_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_call_switch"
+                android:paddingTop="80px" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="1050px"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"></FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

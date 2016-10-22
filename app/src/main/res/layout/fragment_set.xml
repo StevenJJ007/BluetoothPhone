@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="500px"
+        android:layout_height="400px"
+        android:layout_marginTop="70px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/blooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="蓝牙设备"
+                android:textColor="#f4f4f4"
+                android:textSize="38px" />
+
+            <com.anyonavinfo.bluetoothphone.bpclient.custom.SwitchButton
+                android:id="@+id/btn_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500px"
+            android:layout_height="90px"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dev_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设备名："
+                android:textColor="#f4f4f4"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/edit_dev_name"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="GTX-960M"
+                android:textColor="#f4f4f4"
+                android:textSize="28px" />
+
+            <Button
+                android:id="@+id/revise_dev_name"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/revise_dev" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500px"
+            android:layout_height="90px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pairing_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="配对码："
+                android:textColor="#f4f4f4"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/edit_pairing_code"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="0000"
+                android:textColor="#f4f4f4"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/async_contacts_application"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="125dp"
+        android:layout_marginTop="10px"
+        android:background="@drawable/tong_bu_kuang"
+        android:text="通讯录同步"
+        android:textColor="#f4f4f4"
+        android:textSize="34px" />
+
+
+    <FrameLayout
+        android:id="@+id/dev_container"
+        android:layout_width="600px"
+        android:layout_height="500px"
+        android:layout_marginTop="100px"
+        android:layout_toRightOf="@+id/linearLayout">
+
+        <ListView
+            android:id="@+id/dev_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:visibility="gone">
+
+        </ListView>
+
+    </FrameLayout>
+
+</RelativeLayout>
